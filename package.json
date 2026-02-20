@@ -1,0 +1,33 @@
+{
+  "name": "tavily-competitive-updates-slack",
+  "version": "1.0.0",
+  "description": "Monitor competitors using Tavily API and deliver updates to Slack",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["tavily", "slack", "competitive-intelligence"],
+  "license": "MIT",
+  "dependencies": {
+    "@slack/web-api": "^7.8.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/node-cron": "^3.0.11",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0"
+  }
+}
